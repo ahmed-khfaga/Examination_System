@@ -1,0 +1,34 @@
+﻿@model Department
+
+<form asp-action="Edit">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="card shadow rounded-4 border-0">
+                    <!-- Header -->
+                    <div class="card-header bg-primary text-white rounded-top-4">
+                        <h3 class="mb-0">Edit Department</h3>
+                    </div>
+
+                    <!-- Validation Summary -->
+                    <div class="card-body p-4">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Department Name Field -->
+                        <div class="mb-4">
+                            <label asp-for="Name" class="form-label fw-semibold fs-5">Department Name</label>
+                            <input type="text" asp-for="Name" class="form-control form-control-lg" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Footer Buttons -->
+                    <div class="card-footer bg-light border-0 text-end rounded-bottom-4">
+                        <input type="submit" value="Save" class="btn btn-primary px-4" />
+                        <a asp-action="Index" class="btn btn-outline-primary ms-3 px-4">← Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

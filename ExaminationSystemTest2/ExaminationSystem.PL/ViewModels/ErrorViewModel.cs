@@ -1,4 +1,4 @@
-namespace ExaminationSystem.PL.Models
+namespace ExaminationSystem.PL.ViewModels
 {
     public class ErrorViewModel
     {

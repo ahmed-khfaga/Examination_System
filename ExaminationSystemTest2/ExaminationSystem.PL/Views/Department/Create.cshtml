@@ -1,0 +1,30 @@
+﻿@model Department
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow rounded-4 border-0">
+                <div class="card-header bg-success text-white rounded-top-4">
+                    <h3 class="mb-0">Create New Department</h3>
+                </div>
+
+                <form asp-action="Create" method="post">
+                    <div class="card-body p-4">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-4">
+                            <label asp-for="Name" class="form-label fw-semibold fs-5">Department Name</label>
+                            <input asp-for="Name" class="form-control form-control-lg" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-light border-0 text-end rounded-bottom-4">
+                        <input type="submit" value="Create" class="btn btn-success px-4" />
+                        <a asp-action="Index" class="btn btn-outline-success ms-3 px-4">← Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

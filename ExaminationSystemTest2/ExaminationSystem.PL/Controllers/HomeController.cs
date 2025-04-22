@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ExaminationSystem.PL.Models;
+using ExaminationSystem.PL.ViewModels;
 
 namespace ExaminationSystem.PL.Controllers;
 
