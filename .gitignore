@@ -1,0 +1,9 @@
+.vs/
+bin/
+obj/
+*.user
+*.dll
+*.pdb
+*.exe
+*.cache
+*.BuildWithSkipAnalyzers
